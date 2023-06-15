@@ -1,0 +1,174 @@
+/* universal selector appliying default box-sizing to border-box type, default padding and margin=0 
+I modified the widht-value to make it look closer to the mockup
+*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* element selector appliying default background color for the whole body element*/
+body {
+    background-color: #d9dcd6;
+}
+
+/*class selector that modifies the padding in the .header class
+It also specifies background color, font types to use and font color */
+
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*element selector that applies to all the h1 elements within the .header class. This line makes it so the element displays 
+in a line but behaving as a block element, whose size and height can be modified  */
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*This line changes the color of the "seo" letters */
+.header h1 .seo {
+    color: #d9dcd6;
+}
+/* element within a class selector that ads style to the div element within the header element*/
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* this line removes the decoration from the unordered list within the header element*/
+
+.header div ul {
+    list-style-type: none;
+}
+
+/* This lines makes it so the list appears horizontally */
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* this lines gives a default font color to all the anchor elements*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* this lines gives a default font size to all p elements*/
+p {
+    font-size: 16px;
+}
+
+/* this selector gives style to the centerpiece image in the page*/
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* this selector makes it so the elemnts affected by this will  go to the right side of their parent element*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+/* this selector makes it so the elemnts affected by this  will  go to the left side of their parent element*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* this selector applies a width restriction to everything within the content class */
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* this styles the benefits class container*/
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/* here I consolidated all the selectors for each bullet point 
+(.benefit-lead,.benefit-brand...) into  new selectors that apply to all div elements within the ".benefits" class */
+
+.benefits div{
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefits div h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits div img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+
+/* here I consolidated all the selectors for each subject (.Search-Engine-Optimization, Online-Reputation-Management...)
+ into a  new ".sections" class */
+
+.sections{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.sections img {
+    max-height: 200px;
+}
+
+
+.sections h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* this styles the footer container*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/* this line specifies the font size of the last header*/
+.footer h2 {
+    font-size: 20px;
+}
