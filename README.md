@@ -1,5 +1,6 @@
 # Accesibility
-## Repository for the first challenge of the bootcamp, focused on accessibility for the page.
+
+### Repository for the first challenge of the bootcamp, focused on accessibility for the page.
 
 Disclaimer:
 The base code is not of my making, it comes from the starter code from GitLab
